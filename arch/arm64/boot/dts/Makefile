@@ -26,35 +26,7 @@
 #dts-dirs += lg
 #dts-dirs += zte
 #else
-ifeq ($(CONFIG_BRAND_SHOW_FLAG),realme)
-    ifeq ($(CONFIG_SHIPPING_API_LEVEL),28)
-        dts-dirs += 19781
-    else
-        dts-dirs += 19696
-    endif
-else
-    ifeq ($(BRAND_SHOW_FLAG),oneplus)
-        dts-dirs += 18821
-        dts-dirs += 18857
-        dts-dirs += 18865
-        dts-dirs += 19801
-        dts-dirs += 19863
-        dts-dirs += 19861
-    else
-        dts-dirs += 19365
-        dts-dirs += 19567
-        dts-dirs += 19031
-        dts-dirs += 19111
-        dts-dirs += 20261
-        dts-dirs += 206B1
-        dts-dirs += 18115
-        dts-dirs += 19081
-        dts-dirs += 18501
-        dts-dirs += 18503
-        dts-dirs += 20711
-        dts-dirs += 20331
-    endif
-endif
+dts-dirs += 20711
 #endif
 
 subdir-y	:= $(dts-dirs)
