@@ -111,3 +111,7 @@ obj-$(CONFIG_OKL4_LINK_SHBUF)    += okl4-link-shbuf.o
 #ifdef OPLUS_FEATURE_MM_ULTRASOUND
 obj-$(CONFIG_AUDIO_SENSOR) += audio_sensor.o
 #endif
+
+#ifdef OPLUS_FEATURE_ESIM
+obj-$(CONFIG_OPLUS_GPIO)    +=  oplus_gpio/
+#endif /* OPLUS_FEATURE_ESIM */
